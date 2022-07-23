@@ -1,0 +1,23 @@
+.contact-footer {
+
+    font-weight: 400;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing-function);
+
+    &-item:not(:last-child) {
+            margin-bottom: 9px;
+        }
+
+    &:hover,
+    &:focus {
+            color: var(--color-accent);
+        }
+}
+
+
+

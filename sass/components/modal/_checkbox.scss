@@ -1,0 +1,56 @@
+.checkbox {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+&-text {
+        line-height: 1.71;
+        color: var(--font-color-second);
+    }
+
+&-castom {
+    width: 16px;
+    height: 15px;
+    border: 2px solid;
+    border-color: var(--font-color-main);
+    border-radius: 2px;
+    margin-right: 7px;
+    transition: background-color 250ms var(--transition-timing-function),
+        background-image 250ms var(--transition-timing-function),
+        border-color 250ms var(--transition-timing-function),
+        border 250ms var(--transition-timing-function);
+        }
+
+&-browser {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    &:checked+.checkbox-castom {
+            background-color: var(--color-accent);
+            border-color: var(--color-accent);
+            background-image: url(../images/icons/modal-check.svg);
+            background-size: contain;
+            background-origin: border-box;
+        }
+
+    &:hover+.checkbox-castom,
+    &:focus+.checkbox-castom {
+            border-color: var(--color-accent);
+        }
+    }
+}
+
+
+
+
+
+
+

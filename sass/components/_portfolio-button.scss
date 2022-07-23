@@ -1,0 +1,45 @@
+.main-button {
+
+    padding: 6px 22px;
+
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.62;
+    font-size: 16px;
+
+    text-align: center;
+
+    border-radius: 4px;
+    border-width: 0;
+
+
+   
+
+    cursor: pointer;
+
+    transition-property: color, background-color, box-shadow;
+    transition-timing-function: var(--transition-timing-function), var(--transition-timing-function), var(--transition-timing-function);
+    transition-duration: 250ms, 250ms, 250ms;
+
+    &:hover,
+        &:focus {
+            color: var(--color-basic);
+            background-color: var(--color-accent);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+}
+
+
+
+.button-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    list-style: none;
+}

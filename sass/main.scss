@@ -1,0 +1,28 @@
+@import "./utils/vars";
+@import "./utils/visuallyhidden";
+
+@import "./base/reset";
+@import "./base/common";
+
+@import "./components/section";
+@import "./components/container";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/contacts";
+@import "./components/socialmedia";
+@import "./components/modal/module";
+@import "./components/portfolio-card";
+@import "./components/portfolio-button";
+@import "./components/subscr-form";
+@import "./components/contact-footer";
+
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/adv";
+@import "./layout/team";
+@import "./layout/client";
+@import "./layout/portfolio";
+@import "./layout/work-list";
+@import "./layout/footer";
+

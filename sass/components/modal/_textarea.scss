@@ -1,0 +1,12 @@
+
+
+.textarea {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+
+    &:focus .placeholder,
+        &:not(:placeholder-shown)+.placeholder {
+            opacity: 0;
+        }
+}
