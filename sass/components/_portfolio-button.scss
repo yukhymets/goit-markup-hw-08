@@ -31,15 +31,15 @@
 }
 
 
+.button-item:nth-child(-n+3) {
+@media screen and (max-width: 767px) {
+margin-bottom: 15px;
+} 
+    
+}
+
 
 .button-item:not(:last-child) {
     margin-right: 8px;
 }
 
-
-.nav-menu {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    list-style: none;
-}
