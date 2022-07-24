@@ -20,40 +20,157 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <a href="./index.html" lang="en" class="logo">
-          Web<span class="logo__accent">Studio</span>
-        </a>
-        <nav>
-          <ul class="nav">
-            <li class="nav__list nav__list--current">
-              <a href="./index.html" class="nav__link">Студия</a>
-            </li>
-            <li class="nav__list">
-              <a href="./portfolio.html" class="nav__link">Портфолио</a>
-            </li>
-            <li class="nav__list">
-              <a href="" class="nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="contacts__mail">
-            <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg class="contacts__icon" width="16px" height="12px">
-                <use href="images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
+        <div class="header__item">
+          <a class="logo logo--header" data-logo href="./index.html">
+            <span class="logo__accent">Web</span>Studio
+          </a>
+          <div class="burger-menu" id="burger-menu" data-menu>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item nav__item--current">
+                  <a
+                    class="header__link"
+                    href="./index.html"
+                    aria-label="studio"
+                  >
+                    Студия</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="header__link"
+                    href="./portfolio.html"
+                    aria-label="portfolio"
+                  >
+                    Портфолио</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="header__link" href="" aria-label="contacts"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div>
+              <ul class="contacts">
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link"
+                    href="mailto:info@devstudio.com"
+                    aria-label="mail"
+                  >
+                    <svg class="contacts__icon" width="16" height="12">
+                      <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link"
+                    href="tel:+380961111111"
+                    aria-label="tel"
+                  >
+                    <svg class="contacts__icon" width="10" height="16">
+                      <use href="./images/icons.svg#icon-mobile"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+              <ul class="social burger-menu__social">
+                <li class="social__item burger-menu__social__item">
+                  <a
+                    class="social__link-burger-menu"
+                    aria-label="instagram"
+                    href=""
+                  >
+                    <svg
+                      class="social__icon social__icon--burger-menu"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-insta"></use>
+                    </svg>
+                    <span class="social__name-burger-menu">instagram</span>
+                  </a>
+                </li>
+                <li class="social__item burger-menu__social__item">
+                  <a
+                    class="social__link-burger-menu"
+                    aria-label="twitter"
+                    href=""
+                  >
+                    <svg
+                      class="social__icon social__icon--burger-menu"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                    <span class="social__name-burger-menu">twitter</span>
+                  </a>
+                </li>
+                <li class="social__item burger-menu__social__item">
+                  <a
+                    class="social__link-burger-menu"
+                    aria-label="facebook"
+                    href=""
+                  >
+                    <svg
+                      class="social__icon social__icon--burger-menu"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                    <span class="social__name-burger-menu">facebook</span>
+                  </a>
+                </li>
+                <li class="social__item burger-menu__social__item">
+                  <a
+                    class="social__link-burger-menu"
+                    aria-label="linkedin"
+                    href=""
+                  >
+                    <svg
+                      class="social__icon social__icon--burger-menu"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                    <span class="social__name-burger-menu">linkedin</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button
+            class="burger-menu__btn"
+            data-menu-button
+            type="button"
+            aria-label="mobile menu button"
+          >
+            <svg
+              class="burger-menu__btn-icon"
+              width="24"
+              height="16"
+              aria-label="mobile menu switch"
+              aria-controls="burger-menu"
             >
-          </li>
-          <li class="contacts__phone">
-            <a href="tel:+380961111111" class="contacts__link">
-              <svg class="contacts__icon" width="10px" height="16px">
-                <use href="images/icons.svg#icon-mobile"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+              <use
+                class="icon-menu"
+                href="./images/icons.svg#icon-burger"
+              ></use>
+              <use
+                class="icon-cross"
+                href="./images/icons.svg#icon-modal-close"
+              ></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -699,7 +816,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="ssocialmedia__item">
+                  <li class="socialmedia__item">
                     <a
                       class="socialmedia__link link"
                       href=""
@@ -1011,5 +1128,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>

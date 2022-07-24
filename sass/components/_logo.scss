@@ -21,3 +21,25 @@
         }
 }
 
+.logo--header {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        z-index: 5;
+        opacity: 1;
+        pointer-events: initial;
+        transform: translateX(0);
+        @include transition((opacity, transform));
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo--hidden {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(100%);
+        @include transition((opacity, transform));
+    }
+}

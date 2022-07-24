@@ -6,6 +6,10 @@
 &-text {
         line-height: 1.71;
         color: var(--font-color-second);
+
+        @media screen and (max-width:1199px) {
+                font-size: 12px;
+            }
     }
 
 &-castom {
