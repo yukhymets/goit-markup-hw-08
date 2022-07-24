@@ -1,15 +1,37 @@
 .footer {
     background-color: #2F303A;
     padding: 60px 0;
+    // text-align: center;
 
         &-wrap {
+            @media screen and (max-width: 1200px) {
+                text-align: center;
+                }
+
+
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
             display: flex;
             align-items: baseline;
-    
+            flex-wrap: wrap;
+            }
+
+            @media screen and (min-width: 1200px) {
+                display: flex;
+                align-items: baseline;
+            }
         }
     
         &-adress {
+            margin-bottom: 60px;
+
+            @media screen and (min-width: 768px) {
+                margin-left: 76px;
+                margin-right: 165px;
+            }
+
+            @media screen and (min-width: 1200px) {
             margin-right: 70px;
+            }
         }
 
         &-subtittle {
@@ -22,9 +44,14 @@
         }
 
         &-social-media {
-    display: flex;
+            display: flex;
+            margin-bottom: 60px;
+            @media screen and (max-width: 1199px) {
+                justify-content: center;
         }
-        
+                }
+
+
         &-social-item:not(:last-child) {
             margin-right: 10px;
         }
@@ -56,9 +83,13 @@
     
     
         &-social {
+
+            @media screen and (min-width: 1200px) {
             margin-right: 93px;
+        
         }
-    
+        }
+
         &-subscr {
             margin-bottom: 20px;
             font-size: 14px;
@@ -67,6 +98,7 @@
         }
 
         &-button {
+            
 
             display: flex;
             align-items: center;
@@ -89,19 +121,30 @@
             line-height: 1.88;
             letter-spacing: 0.06em;
             cursor: pointer;
+
+            @media screen and (max-width: 1199px) {
+            margin-right: auto;
+                margin-left: auto;
         }
+                }
 
         &-placeholder {
-        position: absolute;
-        top: 50%;
-        left: 16px;
-        transform: translateY(-50%);
-
-        font-size: 16px;
-        line-height: 1.25;
-        color: var(--font-color-second);
+            position: absolute;
+            font-size: 16px;
+            line-height: 1.25;
+            color: var(--font-color-second);
+            left: 16px;
+                transform: translateY(-50%);
+                top: 38%;
+            
+        @media screen and (min-width:1200px) {
+            top: 50%;
+        
+}
+        
         }
-        }
+                }
+        
 
 .logo-footer {
     font-family: 'Raleway', sans-serif;
@@ -117,22 +160,11 @@
     padding-left: 0;
     margin: 0 0;
     line-height: 1.71;
+    
+@media screen and (min-width:1200px) {
+    width: 231px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -168,4 +200,12 @@
 
 .accent-logo-footer {
     color: var(--color-accent);
+}
+
+
+.subscr-block {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+}
 }

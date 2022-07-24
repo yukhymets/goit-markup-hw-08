@@ -1,11 +1,18 @@
-.nav {
 
+
+.nav {
+    @media screen and (max-width:767px) {
+    display: none;
+    }
+
+    @media screen and (min-width:768px) {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--font-color-main);
 
     margin: 0;
+    margin-right: 84px;
 
     display: flex;
 
@@ -59,4 +66,5 @@
         &__list:not(:last-child) {
             margin-right: 50px;
         }
+}
 }
