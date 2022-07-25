@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-body>
     <header class="header">
       <div class="header__container">
         <div class="header__item">
@@ -68,7 +68,7 @@
                 </li>
                 <li class="contacts__item">
                   <a
-                    class="contacts__link contacts__link--burgger-menu-tel"
+                    class="contacts__link burger-menu-tel"
                     href="tel:+380961111111"
                     aria-label="tel"
                   >
@@ -1119,7 +1119,11 @@
             </label>
           </div>
           <div class="modal-btn-center">
-            <button class="modal-btn-submit" type="submit">
+            <button
+              class="modal-btn-submit"
+              type="submit"
+              aria-label="send data"
+            >
               <span>Отправить</span>
             </button>
           </div>

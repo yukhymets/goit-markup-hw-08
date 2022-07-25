@@ -69,16 +69,7 @@
 
         
     }
-        &--burger-menu-tel {
-            @media screen and (max-width: 479px) {
-                // font-size: 24px;
-    
-    
-                font-size: 34px;
-                line-height: 1.18;
-                color: var(--color-accent);
-            }
-        }
+        
     @media screen and (min-width:768px) and (max-width: 1199px) {
         font-size: 12px;
 
@@ -100,3 +91,14 @@
         display: none;
     }
 }
+
+
+.burger-menu-tel {
+        @media screen and (max-width: 479px) {
+
+
+            font-size: 34px;
+            line-height: 1.18;
+            color: var(--color-accent);
+        }
+    }
