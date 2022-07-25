@@ -310,16 +310,11 @@ body {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .contacts__link--burger-menu-tel {
     font-size: 34px;
     line-height: 1.18;
     color: var(--color-accent);
-  }
-}
-@media screen and (max-width: 767px) and (max-width: 479px) {
-  .contacts__link--burger-menu-tel {
-    font-size: 24px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -794,7 +789,7 @@ body {
   margin-right: auto;
   padding: 0 15px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .header__container {
     max-width: 480px;
   }
