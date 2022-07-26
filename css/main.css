@@ -342,7 +342,12 @@ body {
     font-size: 34px;
     line-height: 1.18;
     color: var(--color-accent);
+    color: red;
   }
+}
+
+.no-scroll--burger-menu {
+  overflow: hidden;
 }
 
 .socialmedia {
