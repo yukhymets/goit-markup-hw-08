@@ -428,8 +428,13 @@ body {
   transition: -webkit-transform 250ms var(--transition-timing-function);
   transition: transform 250ms var(--transition-timing-function);
   transition: transform 250ms var(--transition-timing-function), -webkit-transform 250ms var(--transition-timing-function);
-  width: 450px;
+  width: 100%;
   height: 609px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -555,7 +560,8 @@ body {
   }
 }
 .checkbox-castom {
-  width: 16px;
+  width: 100%;
+  max-width: 16px;
   height: 15px;
   border: 2px solid;
   border-color: var(--font-color-main);

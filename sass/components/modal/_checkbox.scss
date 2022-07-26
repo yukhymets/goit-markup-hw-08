@@ -13,7 +13,8 @@
     }
 
 &-castom {
-    width: 16px;
+    width: 100%;
+    max-width: 16px;
     height: 15px;
     border: 2px solid;
     border-color: var(--font-color-main);
