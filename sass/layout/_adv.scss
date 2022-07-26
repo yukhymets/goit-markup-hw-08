@@ -20,19 +20,23 @@
         }
 
     &__container {
-                    
+                    width: 100%;
                     margin-left: auto;
-                        margin-right: auto;
-                        width: 480px;
-                        padding: 0 15px;
-                    
-                        @media screen and (min-width: 768px) {
-                            width: 768px;
-                        }
-                    
-                        @media screen and (min-width: 1200px) {
-                            width: 1200px;
-                        }
+                    margin-right: auto;
+                
+                    padding: 0 15px;
+                
+                    @media screen and (min-width: 480px) and (max-width:767px) {
+                        max-width: 480px;
+                    }
+                
+                    @media screen and (min-width: 768px) {
+                        width: 768px;
+                    }
+                
+                    @media screen and (min-width: 1200px) {
+                        width: 1200px;
+                    }
                     
                 }
         
@@ -68,8 +72,10 @@
                 }
         
                 &__item {
+                    @media screen and (min-width: 480px) {
+                            max-width: 450px;
+                        }
                     
-                    width: 450px;
 
                     @media screen and (min-width: 768px) {
                     width: calc((100% - 15px*2)/2);

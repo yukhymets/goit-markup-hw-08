@@ -106,7 +106,8 @@
             display: flex;
             align-items: center;
 
-            width: 200px;
+            width: 100%;
+            max-width: 200px;
             height: 50px;
 
             padding: 0 28px;
@@ -207,8 +208,10 @@
 
 
 .subscr-block {
+    
     @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
+    width: 450px;
 }
 }
