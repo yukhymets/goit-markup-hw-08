@@ -337,12 +337,11 @@ body {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .burger-menu-tel {
     font-size: 34px;
     line-height: 1.18;
     color: var(--color-accent);
-    color: red;
   }
 }
 
