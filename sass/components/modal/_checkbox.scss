@@ -2,6 +2,11 @@
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+    width: 100%;
+
+    @media screen and (min-width:1199px) {
+    justify-content:center;
+    }
 
 &-text {
         line-height: 1.71;

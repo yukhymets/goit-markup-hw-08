@@ -342,7 +342,14 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .burger-menu-tel {
+    font-size: 27px;
+    line-height: 1.18;
+    color: var(--color-accent);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .burger-menu-tel {
     font-size: 34px;
     line-height: 1.18;
@@ -430,6 +437,11 @@ body {
   transition: transform 250ms var(--transition-timing-function), -webkit-transform 250ms var(--transition-timing-function);
   width: 100%;
   height: 609px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+  }
 }
 @media screen and (max-width: 1199px) {
   .modal {
@@ -549,6 +561,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 1199px) {
+  .checkbox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .checkbox-text {
   line-height: 1.71;
@@ -1067,11 +1087,16 @@ body {
 
 .social__name-burger-menu {
   font-weight: 500;
-  font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--color-accent);
   text-transform: capitalize;
+  font-size: 10px;
+}
+@media screen and (min-width: 480px) {
+  .social__name-burger-menu {
+    font-size: 18px;
+  }
 }
 
 .social__icon--burger-menu {
@@ -1626,6 +1651,8 @@ body {
             align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1638,13 +1665,9 @@ body {
             align-items: baseline;
   }
 }
-.footer-adress {
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer-adress {
-    margin-left: 76px;
-    margin-right: 165px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1663,7 +1686,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 60px;
 }
 @media screen and (max-width: 1199px) {
   .footer-social-media {
@@ -1699,6 +1721,11 @@ body {
 }
 .footer-social-link:hover, .footer-social-link:focus {
   background-color: var(--color-accent);
+}
+@media screen and (max-width: 1199px) {
+  .footer-social {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-social {
@@ -1811,8 +1838,6 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscr-block {
-    margin-left: auto;
-    margin-right: auto;
     width: 450px;
   }
 }/*# sourceMappingURL=main.css.map */
